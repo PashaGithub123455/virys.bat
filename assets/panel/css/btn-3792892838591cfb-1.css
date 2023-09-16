@@ -1,0 +1,319 @@
+.btn {
+    border-radius: 2px;
+    font-weight: var(--bold, 700);
+    padding: 8px 15px 8px 10px;
+    font-size: 18px;
+    display: inline-block;
+    transition: background 0.05s;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+}
+
+button.btn {
+    color: inherit;
+}
+
+button {
+    border: 0 none;
+}
+
+.btn:not(.btn-invisible) {
+    color: var(--color-light, #f0f0f0);
+}
+
+.btn-invisible {
+    background: transparent;
+}
+
+.btn.hidden {
+    display: none;
+}
+
+.btn:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08));
+}
+
+.btn:active {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.16));
+}
+
+.btn i:not(.fa-btn-end),
+.btn svg:not(.fa-btn-end) {
+    margin-right: 8px;
+}
+
+.btn i.fa-btn-end,
+.btn svg.fa-btn-end {
+    margin-left: 5px;
+    margin-right: -3px;
+}
+
+.btn-margin {
+    margin: 10px 8px 10px 0;
+}
+
+.btn-inline {
+    display: inline;
+}
+
+.btn-right {
+    margin: 10px 0 10px 8px;
+}
+
+.btn-block {
+    width: 100%;
+    text-align: center;
+}
+
+.btn-notext {
+    padding: 8px 10px;
+    line-height: 1em;
+    box-sizing: content-box;
+    height: 1em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 1em;
+    align-items: center;
+}
+
+.btn-notext-mobile {
+    display: flex;
+    align-items: center;
+}
+
+.btn-topright {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 0;
+}
+
+.btn-clickme i:before,
+.btn-clickme svg:before {
+    width: 18px;
+    display: inline-block;
+}
+
+.btn-clickme:hover i:before,
+.btn-clickme:hover svg:before {
+    content: "\f25a";
+    font-weight: lighter;
+}
+
+.btn-disabled {
+    cursor: default;
+}
+
+.btn-working,
+.btn-done {
+    cursor: wait;
+}
+
+.btn.btn-working i:before,
+.btn.btn-working svg:before {
+    content: "\f013";
+}
+
+.btn-working i {
+    -webkit-animation: fa-spin 2s infinite linear;
+    animation: fa-spin 2s infinite linear;
+}
+
+.btn-disabled:not(.btn-working):not(.btn-done),
+.btn-disabled:not(.btn-working):not(.btn-done):hover,
+.btn-disabled:not(.btn-working):not(.btn-done):active {
+    background-color: transparent;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    color: inherit;
+}
+
+.btn-working,
+.btn-working:hover,
+.btn-working:active,
+.btn-done,
+.btn-done:hover,
+.btn-done:active {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.16));
+}
+
+.btn.btn-done i:before,
+.btn.btn-done svg:before {
+    content: "\f00c";
+}
+
+.btn-label {
+    margin-left: 8px;
+    background: var(--color-light, #f0f0f0);
+    color: var(--color-dark, #2d3943);
+    padding: 0 3px;
+    border-radius: 2px;
+}
+
+.btn.btn-white,
+.btn.btn-light {
+    background-color: var(--color-light, #f0f0f0);
+    color: var(--color-dark, #2d3943);
+}
+
+.btn-black,
+.btn-dark,
+.btn.btn-inverted {
+    background-color: var(--color-dark, #2d3943);
+}
+
+.btn-green,
+.btn-success {
+    background-color: var(--color-success, #1FD78D);
+}
+
+.btn-red,
+.btn-danger {
+    background-color: var(--color-danger, #F62451);
+}
+
+.btn-orange,
+.btn-warn {
+    background-color: var(--color-warn, #EB7B59);
+}
+
+.btn-blue {
+    background-color: #2d87d3;
+}
+
+.btn-main {
+    background-color: var(--color-main);
+}
+
+.btn-tiny {
+    padding: 3px 8px 3px 6px;
+    font-size: 10px;
+}
+
+.btn-tiny.btn-notext {
+    padding: 3px 4px;
+}
+
+.btn-tiny i:not(.fa-btn-end),
+.btn-tiny svg:not(.fa-btn-end) {
+    margin-right: 3px;
+}
+
+.btn-tiny.btn-clickme i:before,
+.btn-tiny.btn-clickme svg:before {
+    width: 10px;
+}
+
+.btn-small {
+    padding: 5px 11px 5px 8px;
+    font-size: 14px;
+}
+
+.btn-small.btn-notext {
+    padding: 6px 8px;
+}
+
+.btn-small i:not(.fa-btn-end),
+.btn-small svg:not(.fa-btn-end) {
+    margin-right: 5px;
+}
+
+.btn-small.btn-clickme i:before,
+.btn-small.btn-clickme svg:before {
+    width: 14px;
+}
+
+.btn-large {
+    padding: 12px 21px 12px 16px;
+    font-size: 23px;
+}
+
+.btn-large.btn-notext {
+    padding: 12px 16px;
+}
+
+.btn-large i:not(.fa-btn-end),
+.btn-large svg:not(.fa-btn-end) {
+    margin-right: 12px;
+}
+
+.btn-large.btn-clickme i:before,
+.btn-large.btn-clickme svg:before {
+    width: 23px;
+}
+
+.btn-huge {
+    padding: 20px 30px 20px 18px;
+    font-size: 28px;
+}
+
+.btn-huge.btn-notext {
+    padding: 20px 18px;
+}
+
+.btn-huge i:not(.fa-btn-end),
+.btn-huge svg:not(.fa-btn-end) {
+    margin-right: 15px;
+}
+
+.btn-huge.btn-clickme i:before,
+.btn-huge.btn-clickme svg:before {
+    width: 28px;
+}
+
+.btn.btn-leftsplit {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.btn.btn-rightsplit {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.btn-switch .btn:not(.btn-switch-active) .btn-switch-label {
+    display: none;
+}
+
+.btn-switch .btn {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.btn-switch .btn:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.btn-switch .btn:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.btn-switch .btn:not(:last-child):not(:first-child) {
+    border-radius: 0;
+}
+
+.btn-switch .btn:not(.btn-switch-active) {
+    background: var(--color-dark-mark);
+}
+
+.btn-switch .btn:not(.btn-switch-active) i {
+    margin: 0 3px;
+}
+
+.btn-switch .btn:first-child:not(.btn-switch-active) i {
+    margin: 0 3px 0 5px;
+}
+
+.btn-switch .btn:last-child:not(.btn-switch-active) i {
+    margin: 0 5px 0 3px;
+}
+
+.btn.btn-notext i {
+    padding: 0;
+    margin: 0;
+}

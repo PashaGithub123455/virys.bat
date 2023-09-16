@@ -1,0 +1,459 @@
+ html {
+    min-height: 100%;
+}
+
+body {
+    background: var(--color-dark);
+    color: var(--color-light);
+    overflow-y: auto;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+.logo {
+    justify-content: flex-start;
+}
+
+.logo img {
+    height: 54px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-wrapper {
+    padding: 32px;
+    position: absolute;
+}
+
+.go-wrapper {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.go {
+    max-width: 100%;
+    width: 600px;
+    overflow-x: hidden;
+}
+
+.login-wrapper {
+    padding: 16px;
+}
+
+.create-wrapper {
+    width: 200%;
+    display: flex;
+}
+
+.create-server,
+.create-account {
+    width: 100%;
+    padding: 16px;
+}
+
+.create-account {
+    visibility: hidden;
+}
+
+.create-software {
+    width: 100%;
+}
+
+.create-software .btn {
+    margin-bottom: 0;
+}
+
+.go-title {
+    font-size: 46px;
+    color: var(--color-light);
+    padding-bottom: 32px;
+    text-align: center;
+    font-weight: var(--bold);
+}
+
+.create {
+    padding: 0 0 12px;
+}
+
+.or {
+    padding: 24px 0;
+}
+
+.or-line {
+    text-align: center;
+    font-weight: var(--bold);
+    border-top: 3px solid var(--color-light);
+}
+
+.or-or {
+    margin-top: -12px;
+    text-align: center;
+}
+
+.or-or span {
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: var(--bold);
+    background: var(--color-dark);
+    padding: 0 6px;
+}
+
+.login-form {
+    display: flex;
+    margin: 0 -4px;
+}
+
+.go-sub-title {
+    font-weight: var(--bold);
+    margin-bottom: 4px;
+    font-size: 13px;
+}
+
+.go-input-group {
+    padding: 8px;
+    display: flex;
+    background: var(--color-light);
+    color: var(--color-dark);
+    border-radius: 2px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-items: center;
+}
+
+.go-input-group-element {
+    margin-bottom: 16px;
+}
+
+.go-create-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.go-create-button-single {
+    justify-content: center;
+}
+
+.go-input-group-valid .go-input-group-icon {
+    color: var(--color-success);
+}
+
+.go-input-group-invalid .go-input-group-icon {
+    color: var(--color-danger);
+}
+
+.go-input-error {
+    color: var(--color-danger);
+    font-size: 12px;
+    font-weight: var(--bold);
+    padding-top: 4px;
+}
+
+.login-form .go-input-group {
+    margin: 0 4px;
+}
+
+.go-input-group-icon {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.go-input-group-input {
+    flex-grow: 1;
+    width:  20px;
+}
+
+.go-input-group-input input {
+    border: none;
+    width: 100%;
+    outline: none;
+    background: none;
+    font-size: 16px;
+    font-weight: var(--bold);
+    color: inherit;
+}
+
+.login-button {
+    margin: 0 4px;
+}
+
+.login-social {
+    margin-top: 12px;
+}
+
+.login-social-buttons {
+    display: flex;
+    margin: 0 -6px;
+    flex-wrap: wrap;
+}
+
+.login-social-buttons .btn {
+    display: block;
+    flex-grow: 1;
+    text-align: center;
+    margin: 0 6px 6px;
+    max-width: 140px;
+}
+
+.login-forgot-password {
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.login-forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-error {
+    background: var(--color-danger);
+    color: var(--color-light);
+    font-weight: var(--bold);
+    padding: 8px 12px;
+    border-radius: 2px;
+    margin-bottom: 6px;
+    font-size: 16px;
+    display: none;
+}
+
+.login-error .fa {
+    margin-right: 8px;
+}
+
+.login-twofactor.go-input-group {
+    width: 100px;
+    flex-grow: 0;
+    display: none;
+}
+
+.login-twofactor input {
+    width: 60px;
+}
+
+.social-login-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -8px;
+}
+
+
+.social-login-buttons > .btn {
+    margin-right: 8px;
+    margin-bottom: 6px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.social-login-buttons > .btn > i{
+    margin-right: 5px;
+}
+
+.google-button {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.google-button .google-logo {
+    margin-right: 12px;
+}
+
+.create-account .or {
+    padding: 24px 0 12px;
+}
+
+.grecaptcha-badge {
+    box-shadow: none !important;
+}
+
+.legal-toggle {
+    margin: 22px 0px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.legal-toggle .toggle {
+    flex-shrink: 0;
+}
+
+.legal-toggle.errored {
+    border-left: 5px solid var(--color-danger);
+    padding-left: 8px;
+}
+
+.legal-toggle .toggle-label {
+    font-size: 14px;
+    padding-right: 8px;
+}
+
+.legal-toggle .toggle-label a {
+    text-decoration: underline;
+}
+
+.warn {
+    background: var(--color-warn);
+    color: var(--color-light);
+    font-weight: var(--bold);
+    font-size: 18px;
+    padding: 12px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.warn i {
+    margin-right: 10px;
+}
+
+@media all and (max-width: 1000px) {
+    .logo img {
+        max-height: 36px;
+    }
+}
+
+@media all and (max-width: 600px) {
+
+    .logo-wrapper {
+        padding: 16px;
+        position: relative;
+    }
+
+    .with-recaptcha {
+        padding-bottom: 90px;
+    }
+
+    .go-wrapper {
+        min-height: calc(100% - 68px);
+    }
+
+    .go-title {
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+
+    .logo-wrapper {
+        padding: 16px;
+        position: relative;
+    }
+
+    .login-form {
+        flex-wrap: wrap;
+    }
+
+    .login-form > * {
+        width: 100%;
+    }
+
+    .login-form .go-input-group {
+        margin-bottom: 8px;
+    }
+
+    .go-input-group-element {
+        margin-bottom: 8px;
+    }
+
+    .login-button {
+        text-align: center;
+    }
+
+    .create-btn {
+        font-size: 22px;
+        padding: 15px 20px 15px 12px;
+    }
+
+    .or {
+        padding: 16px 0px;
+    }
+
+    .social-login-buttons {
+        display: block;
+    }
+
+    .social-login-buttons .btn {
+        margin-bottom: 8px;
+        width: 100%;
+    }
+
+    .login-twofactor input,
+    .login-twofactor.go-input-group {
+        width: 100%;
+    }
+
+}
+          ‚     ‰PNG
+
+   IHDR         \r¨f  IIDATxœíÝÑm¬:@QxJ7h
+œ
+(M=sRÁs¤Úk5€c†-çÃö~œ×w’þ› 0G  L  L  L  L  L  L  L  L  L  L  L  L  L  L  L  L  L  L  L  L  L  L  L  L  L  L  L  L  l: ®&§nôø™|ø¶mûçýÚ‡Ç cŽóÀô
+ $ & & & & & & & & & & & & öè ç•ßJ<9æÿùs0}À’ÏûõÞO=mò<ó?;ÿáÑ+ ` @˜ @˜ @˜ @˜ @˜ @˜ @˜ @˜ @˜ @˜ @˜ @˜ @˜ @˜ @˜ @˜ @˜ @˜ @˜ @˜ @˜ @˜ @˜ @˜ @˜ @˜ @˜ @˜ @˜ ¬I_}ÞÁ‚Ÿé<Ü>}?üq^ûçýù~Ÿ=ý÷À+€‡›úø§ŸÍß             €AÇyn¥½s0Ëy ƒ>ï×·¾Ÿ}ú<:+               {ôy 7¹Ÿ~wMöïÝ£W w˜ø;Œ¡ês‡1¬xt €5 a a a a a a a a a a a a a a a a a a a a a a a a a a a aÀq^£WCßeUw˜û;ŒaÅÏô V|Þ¯ïq^£×3OßO_æý¯{ô
+ :root {
+    --font-main: Play, sans-serif;
+    --font-mono: "Roboto Mono", monospace;
+    --bold: 700;
+
+    --color-dark: #2D3943;
+    --color-light: #f0f0f0;
+    --color-main: #2b87d3;
+    --color-danger: #F62451;
+    --color-success: #1fd78d;
+    --color-warn: #EB7B59;
+    --color-loading: #A4A4A4;
+
+    --color-dark-mode: #161c21;
+    --color-dark-text: #47535D;
+    --color-dark-mark: #40505c;
+    --color-dark-hover: #47535D;
+
+    --color-light-fade: #A4A4A4;
+}
+
+.server:hover {
+    background: var(--color-dark);
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+}
+
+.page-files,
+.page-software,
+.page-players {
+    margin-bottom: 32px;
+}:root {
+    --font-main: Play, sans-serif;
+    --font-mono: "Roboto Mono", monospace;
+    --bold: 700;
+
+    --color-dark: #2D3943;
+    --color-light: #f0f0f0;
+    --color-main: #2b87d3;
+    --color-danger: #F62451;
+    --color-success: #1fd78d;
+    --color-warn: #EB7B59;
+    --color-loading: #A4A4A4;
+
+    --color-dark-mode: #161c21;
+    --color-dark-text: #47535D;
+    --color-dark-mark: #40505c;
+    --color-dark-hover: #47535D;
+
+    --color-light-fade: #A4A4A4;
+}
+
+.server:hover {
+    background: var(--color-dark);
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+}
+
+.page-files,
+.page-software,
+.page-players {
+    margin-bottom: 32px;
+}
